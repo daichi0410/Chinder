@@ -4,5 +4,6 @@ Rails.application.routes.draw do
   # root "top#index"
 
   # ここの行を追加する
-  resources :users, only: %i(show)
+  root "users#show"
+  resources :users, only: [:index, :show]
 end
