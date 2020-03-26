@@ -4,5 +4,8 @@ Rails.application.routes.draw do
   # root "top#index"
 
   # ここの行を追加する
+  devise_for :users
+  root 'top#index'
+
   resources :users, only: [:index, :show]
 end
