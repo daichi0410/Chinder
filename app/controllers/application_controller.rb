@@ -5,8 +5,9 @@ class ApplicationController < ActionController::Base
   protected
 
   def configure_permitted_parameters
-    devise_parameter_sanitizer.permit(:sign_up, keys: %i(name self_introduction sex img_name))
-    # この行を追加する
     devise_parameter_sanitizer.permit(:account_update, keys: %i(name self_introduction sex img_name))
+  end
+  def after_sign_in_path_for(resource)
+    users_path
   end
 end

@@ -5,7 +5,7 @@ Rails.application.routes.draw do
 
   # ここの行を追加する
   devise_for :users
-  root 'top#index'
-
-  resources :users, only: [:index, :show]
+  root "top#index"
+  # indexを追加する
+  resources :users, only: %i(index show)
 end
