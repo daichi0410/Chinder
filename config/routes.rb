@@ -12,5 +12,5 @@ Rails.application.routes.draw do
 
     # matchingコントローラーのindexアクションのルーティングを追加
     resources :matching, only: %i(index)
-    
+    resources :chat, only: %i(create show)
 end

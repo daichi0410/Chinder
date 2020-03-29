@@ -1,24 +1,84 @@
-# README
+# タイトル
+## ■ アプリの概要
+アプリケーション
+<br>
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+<p text-align: center>
+  <img src="" height="500px"; width="49%"; />
+  <img src="" height="500px"; width="49%"; />
+  <img src="" height="500px"; width="49%"; />
+  <img src="" height="500px"; width="49%"; />
+</p>
 
-Things you may want to cover:
 
-* Ruby version
 
-* System dependencies
+## ■ コンセプト
 
-* Configuration
 
-* Database creation
+## ■ 内容
 
-* Database initialization
 
-* How to run the test suite
+## ■ なぜ作ろうと思ったか 
 
-* Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
 
-* ...
+## ■ 機能一覧
+
+
+## ■ 使用技術
+
+
+## 🌐 App URL
+
+- テストユーザ用アカウント(Email / Password)
+  - Email: 
+  - Password:
+
+#### <操作方法(概要)>  
+
+
+## 💬 Usage
+https://github.com/daichi0410/Chinder
+
+
+## ■ 機能紹介
+
+### 機能
+・<br>
+<p>
+<img src="" height="550px"; width="65%"; />
+</p>
+
+# DB設計
+## chat_roomsーブル
+|Column|Type|Options|
+|------|----|-------|
+|chat_rooms_id|integer|null: false|
+### Association
+-  has_many :chat_messages
+-  has_many :chat_room_users
+
+## chat_room_userテーブル
+|Column|Type|Options|
+|------|----|-------|
+|chat_room_user_id|integer|null: false|
+|chat_rooms_id|integer|null: false|
+|user_id|integer|null: false|
+### Association
+-  belongs_to :chat_room
+-  belongs_to :user
+
+## chat_messagesテーブル
+|Column|Type|Options|
+|------|----|-------|
+|chat_messages_id|integer|null: false|
+|message|string|null: false|
+|chat_rooms_id|integer|null: false|
+|user_id|integer|null: false|
+
+### Association
+-  belongs_to :chat_room
+-  belongs_to :user
+
+## ■ 今後実装したい技術
+・Dockerの導入  
