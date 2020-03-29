@@ -8,4 +8,5 @@ Rails.application.routes.draw do
   root "top#index"
   # indexを追加する
   resources :users, only: %i(index show)
+  resources :reactions, only: %i(create)
 end
