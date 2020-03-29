@@ -9,4 +9,8 @@ Rails.application.routes.draw do
   # indexを追加する
   resources :users, only: %i(index show)
   resources :reactions, only: %i(create)
+
+    # matchingコントローラーのindexアクションのルーティングを追加
+    resources :matching, only: %i(index)
+    
 end
