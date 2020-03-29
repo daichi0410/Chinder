@@ -1,4 +1,4 @@
-# タイトル
+<!-- # タイトル
 ## ■ アプリの概要
 アプリケーション
 <br>
@@ -81,4 +81,4 @@ https://github.com/daichi0410/Chinder
 -  belongs_to :user
 
 ## ■ 今後実装したい技術
-・Dockerの導入  
+・Dockerの導入   -->
