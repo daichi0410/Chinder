@@ -11,6 +11,12 @@ body {
 }
 
 .sinupPage {
+  .field_with_errors{
+    display: none;
+  }
+  #error_explanation{
+    display:none;
+  }
   .header {
     padding: 20px;
     text-align: center;
